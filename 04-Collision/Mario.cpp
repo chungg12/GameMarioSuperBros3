@@ -11,6 +11,7 @@
 #include "RedGoomba.h"
 #include "GreenKoopa.h"
 #include "GreenPara.h"
+#include "BrownGoomba.h"
 
 
 
@@ -122,6 +123,36 @@ void CMario::Update(DWORD dt, vector<LPGAMEOBJECT> *coObjects)
 					if (untouchable == 0)
 					{
 						if (redKoopa->GetState() != REDKOOPA_STATE_DIE)
+						{
+							if (level > MARIO_LEVEL_SMALL)
+							{
+								level = MARIO_LEVEL_SMALL;
+								StartUntouchable();
+							}
+							else
+								SetState(MARIO_STATE_DIE);
+						}
+					}
+				}
+			}
+			else if (dynamic_cast<BrownGoomba*>(e->obj)) // if e->obj is Goomba  
+			{
+				BrownGoomba* brownGoomba = dynamic_cast<BrownGoomba*>(e->obj);
+
+				// jump on top >> kill Goomba and deflect a bit 
+				if (e->ny < 0)
+				{
+					if (brownGoomba->GetState() != BROWNGOOMBA_STATE_DIE)
+					{
+						brownGoomba->SetState(BROWNGOOMBA_STATE_DIE);
+						vy = -MARIO_JUMP_DEFLECT_SPEED;
+					}
+				}
+				else if (e->nx != 0)
+				{
+					if (untouchable == 0)
+					{
+						if (brownGoomba->GetState() != BROWNGOOMBA_STATE_DIE)
 						{
 							if (level > MARIO_LEVEL_SMALL)
 							{

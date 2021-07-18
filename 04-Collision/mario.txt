@@ -5,7 +5,7 @@
 20 textures\misc.png 176 224 248
 30 textures\misc-2.png 0 117 255
 50 textures\enemies-2.png 0 64 88
-60 textures\enemies-5.png 0 235 219
+60 textures\enemies-5.png 0 67 88
 # id left top right bottom texture_id
 [SPRITES]
 # BIG MARIO 

@@ -92,6 +92,7 @@
 #include "GreenKoopa.h"
 #include "GreenPara.h"
 #include "Piranha.h"
+#include "BrownGoomba.h"
 using namespace std;
 
 #define WINDOW_CLASS_NAME L"SampleWindow"
@@ -276,6 +277,7 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	case 55: return new GreenKoopa(objectId);
 	case 56: return new GreenPara(objectId);
 	case 57: return new Piranha(objectId);
+	case 58: return new BrownGoomba(objectId);
 	default:
 		return NULL;
 	}
