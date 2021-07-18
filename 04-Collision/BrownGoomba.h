@@ -34,7 +34,7 @@ public:
 	int max_x = -1;//move max x default
 	BrownGoomba(int objectId) : CGameObject(objectId)
 	{
-		this->SetState(REDGOOMBA_STATE_WALKING);
+		this->SetState(BROWNGOOMBA_STATE_WALKING);
 		this->isBackground = false;
 	}
 	virtual void SetState(int state);
