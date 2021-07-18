@@ -1,0 +1,767 @@
+# id file_path transparent_color_r g b
+[TEXTURES]
+0 textures\mario.png 255 255 255
+10 textures\enemies.png 3 26 110
+20 textures\misc.png 176 224 248
+30 textures\misc-2.png 0 117 255
+40 textures\startgame.png 0 115 239
+# id left top right bottom texture_id
+[SPRITES]
+# BIG MARIO 
+# idle right
+10001 246 154 260 181 0
+# walk
+10002 275 154 290 181 0
+10003 304 154 321 181 0
+# idle left	 
+10011 186 154 200 181 0
+#walk		 
+10012 155 154 170 181 0
+10013 125 154 140 181 0
+# die 
+10099 215 120 231 135 0
+# SMALL MARIO
+# idle small right
+10021 247 0 259 15 0
+# walk
+10022 275 0 291 15 0
+10023 306 0 320 15 0
+# idle small left
+10031 187 0 198 15 0
+# walk
+10032 155 0 170 15 0
+10033 125 0 139 15 0
+
+#BRICK
+20001 408 225 424 241 20
+
+#Long Brick
+20002 1 5 49 22 30
+
+#Big Trees
+20003 362 224 507 352 30
+
+#Small Trees
+20004 52 5 68 21 30
+
+#First Tree
+20005 0 78 128 142 30
+
+#Container hong xanh
+20006 133 68 220 148 30
+
+#Big Brick
+20007 0 773 152 804 30
+
+
+#Chimney
+20008 2 27 36 75 30
+
+#May nho cuoi
+20009 125 696 162 730 30
+
+#gach mini
+20010 200 26 219 42 30
+
+#cay 3 cuc
+20011 602 582 666 636 30
+
+#cay dai
+20012 552 17 655 148 30
+
+#gach cong nho
+20013 181 6 200 25 30
+30013 201 6 220 25 30
+
+#may 1 cloud
+20014 126 0 158 22 30
+
+#container green1
+20015 232 101 311 146 30
+
+#container green2
+20016 343 117 447 146 30
+
+#cuc gach mini brick 3
+20018 163 5 180 24 30
+
+#mini chimney
+20019 152 757 204 808 30
+
+#container pink
+20020 456 100 513 147 30
+
+#container blue
+20021 164 69 221 149 30
+
+#container pink 2
+20022 295 69 359 149 30
+
+
+#container trang white
+20023 343 37 417 149 30
+
+
+
+#container mau hong hinh chu nhat
+20024 183 184 303 248 30
+
+#container mau hong hinh chu nhat
+20025 213 153 336 248 30
+
+#container long
+20026 488 3 546 148 30
+
+#container pink
+20027 243 268 316 301 30
+
+#container blue 1-3
+20028 158 260 231 300 30
+
+#container pink big 1-3
+20029 122 304 211 345 30
+
+#container pink big 1-3
+20029 122 304 211 345 30
+
+#container green 1-3
+20030 70 199 143 239 30
+
+
+
+
+#Money dong tien xoay
+20017 224 5 242 23 30
+30017 242 5 256 23 30
+40017 256 5 266 23 30
+50017 267 5 279 23 30
+60017 280 5 298 23 30
+
+
+#Cay lac shaker map start
+21111 1 27 17 43 40
+31111 20 27 36 43 40
+41111 39 27 55 43 40
+
+#road start
+21112 41 100 66 106 40
+
+#circle start
+21113 26 99 35 107 40
+
+# gold stock
+21114 58 28 75 43 40
+
+# road start 2
+21115 72 91 79 115 40
+
+21116 7 189 24 206 40
+
+21117 2 94 20 112 40
+
+21118 25 189 42 206 40
+
+21119 42 189 59 206 40
+
+21120 60 189 77 206 40
+
+21121 77 189 94 206 40
+
+21122 95 189 111 206 40
+
+21123 27 125 44 143 40
+
+21124 3 125 21 144 40
+
+21125 25 161 42 179 40
+
+21126 5 161 22 180 40
+
+21127 84 299 118 319 40
+
+21128 105 93 126 114 40
+
+21129 45 155 63 180 40
+
+#help
+23333 66 156 84 173 40
+33333 127 214 145 231 40
+
+
+
+#ant
+18001 272 127 289 142 40
+18002 299 127 314 142 40
+18003 145 161 163 179 40
+18004 164 161 182 179 40
+
+
+#GOOMBA
+30001 5 14 21 29 10
+30002 25 14 41 29 10
+#die
+30003 45 21 61 29 10
+
+#brick with question mark animation
+40001 300 117 316 133 20
+40002 318 117 334 133 20
+40003 336 117 352 133 20
+40004 355 117 370 133 20
+
+
+
+# ani_id sprite1_id time1 sprite2_id time2 ...
+[ANIMATIONS]
+
+# ==== MARIO =========
+#idle BIG right
+400 10001 100
+
+#idle BIG left
+401 10011 100
+
+#idle small right
+402 10021 100
+
+#idle small left
+403 10031 100
+
+#walk right big
+500 10001 100 10002 100 10003 100
+
+#walk left big
+501 10011 100 10012 100 10013 100
+
+#walk right small
+502 10021 100 10022 100 10023 100
+
+#walk left small
+503 10031 100 10032 100 10033 100
+
+#die
+599 10099 100
+
+
+# ==== BRICK =========
+601 20001 100
+# ==== QUESTION MARK BRICK =========
+602 40001 1000 40001 100 40002 100 40003 100 40004 100
+# ==== Long Brick =========
+603 20002 100
+# ==== Mini Brick 2 - no quest========= - mat dau hoi da an tien
+714 30013 100
+# ==== Big Trees =========
+604 20003 100
+# ==== Small Trees =========
+605 20004 100
+# ==== First Trees =========
+606 20005 100
+# ==== Container hong xanh =========
+607 20006 100
+# ==== Big Brick=========
+608 20007 100
+# ==== Ong khoi=========
+609 20008 100
+# ==== Mini Cloud=========
+610 20009 100
+# ==== Mini Brick=========
+611 20010 100
+# ==== Medium Tree=========
+612 20011 100
+# ==== Long Tree=========
+613 20012 100
+# ==== Mini Brick 2=========
+#614 20013 100
+614 20013 100 20013 100 30013 100 20013 100
+# ==== cloud 1=========
+615 20014 100
+# ==== Container Green 1=========
+616 20015 100
+# ==== Container Green 2=========
+617 20016 100
+#==== Money dong tien xoay===
+618 20017 100 30017 100 40017 100 50017 100 60017 100
+# ==== Cuc gach mini cong brick 3=========
+619 20018 100
+# ==== Mini chimney =========
+620 20019 100
+# ==== Container Pink =========
+621 20020 100
+# ==== Container Pink 2 =========
+622 20021 100
+# ==== Container Blue =========
+623 20022 100
+# ==== Container White =========
+624 20023 100
+# ==== Container White =========
+625 20024 100
+# ==== Container Big Blue =========
+626 20025 100
+
+# ==== Container Long =========
+627 20026 100
+
+#Container Pink 1-3
+801 20027 100
+
+#Container Blue 1-3
+802 20028 100
+
+#Container Pink Big 1-3
+803 20029 100
+#Container Green 1-3
+804 20030 100
+
+
+
+#==== Cay lac shaker map start===
+901 21111 500 31111 500 41111 500 31111 500
+
+
+921 18001 100 18002 100 
+922 18003 100 18004 100
+#==== Road Start===
+902 21112 100
+
+#==== Circle Start===
+903 21113 100
+
+#==== Gold Stock ===
+904 21114 100
+
+#====Road Start 2===
+905 21115 100
+#====Door 1===
+906 21116 100
+
+#====Start===
+907 21117 100
+
+#====Door 2===
+908 21118 100
+
+909 21119 100
+
+910 21120 100
+
+911 21121 100
+
+912 21122 100
+
+913 21123 100
+
+914 21124 100
+
+915 21125 100
+
+916 21126 100
+
+917 21127 100
+
+918 21128 100
+
+919 21129 100
+
+
+
+#==== Help ===
+920 23333 500 33333 800
+
+
+
+
+# ==== GOOMBA=========
+# walk
+701 30001 100 30002 100
+# die
+702 30003 100
+
+#
+# id ani1 ani2 ani3
+#
+[ANIMATION_SETS]
+# MARIO
+1 400 401 402 403 500 501 502 503 599
+# BRICK 
+2 601
+# Long Brick
+4 603
+# QUESTION MARK BRICK 
+22 602
+# GOOMBA
+3 701 702
+# Big Trees
+5 604
+# Small Tree
+6 605
+# First Tree
+7 606
+# Container Pink Green
+8 607
+#Big Brick
+9 608
+#Chimney
+10 609
+#Mini Cloud
+11 610
+#Mini brick
+12 611
+#Medium Tree
+13 612
+#Long Tree
+14 613
+#Mini Brick 2 Cong
+15 614 714
+#Cloud1
+16 615
+#ContainerGreen 1
+17 616
+#ContainerGreen 2
+18 617
+#Money Dong tien xoay
+19 618
+#Cuc gach cong mini3 brick
+20 619
+#Ong khoi mini
+21 620
+#Cuc container mau hong (container pink)
+23 621
+#Cuc container mau xanh blue dung canh cuc mau hong pink container
+24 622
+#Cuc container mau hong pink 2 vi tri thu 2 map
+25 623
+#Cuc container trang
+26 624
+#Cuc container mau hong hinh chu nhat
+27 625
+#Cuc container mau hong hinh chu nhat
+28 626
+#Cuc container long
+29 627
+#Cuc container long
+101 801
+#Cuc container blue 1-3
+102 802
+#Cuc container pink big 1-3
+103 803
+#Cuc container green 1-3
+104 804
+# ant
+125 921 922
+# Shaker Lac Tree
+105 901
+# Road Start
+106 902
+# Circle Start
+107 903
+
+# Gold Stock
+108 904
+# Road Start2
+109 905
+# Door1
+110 906
+
+# Start
+111 907
+
+#Door2
+112 908
+
+113 909
+
+114 910
+
+115 911
+
+116 912
+
+117 913
+
+118 914
+
+119 915
+
+120 916
+
+121 917
+
+122 918
+
+123 919
+
+#help
+124 920
+
+
+
+[OBJECTS]
+# type x y ani_set_id extra_settings per object type
+# type: 0 = Mario , 1 = Brick, 2 = Goomba , 3 = Long Brick , 4 Big Trees, 5=Small Tree, 6=First Tree1,7=ContainerPink Green
+#	8=Big Brick							9=Chimney(ongkhoi)	10=Mini Cloud				11=MiniBrick 
+
+#	12=Medium Tree(3 cuc nho)           13=LongTree
+
+#	14= Brick Cong Mini                 15=Cloud1			 16=Container green1		 17=Container Green 2
+
+#	18=Money(dong tien xoay)			19=Mini Brick3		 20=Ong khoi Mini Chimney
+
+#	21=Container Pink					22=Container Blue
+
+#	23=Container Pink2					24=Container White	26=Container Big Blue
+
+#	27=Container Long					101=Container Pink 1-3
+
+
+#Shaker Tree start game
+32 24 24 105
+32 40 24 105
+32 56 24 105
+
+32 24 40 105
+32 40 40 105
+32 56 40 105
+
+32 24 72 105
+32 40 72 105
+32 56 72 105
+
+32 187 40 105
+32 203 40 105
+32 219 40 105
+
+
+32 187 72 105
+32 203 72 105
+32 219 72 105
+32 235 72 105
+32 251 72 105
+32 267 72 105
+
+
+32 267 24 105
+32 267 40 105
+32 267 56 105
+32 267 72 105
+32 267 88 105
+32 267 104 105
+
+
+32 267 120 105
+32 267 136 105
+32 267 152 105
+
+32 162 104 105
+
+
+32 251 24 105
+32 251 40 105
+32 251 56 105
+
+
+
+32 187 88 105
+32 203 88 105
+
+32 96 40 105
+32 112 40 105
+32 128 40 105
+
+32 96 56 105
+32 112 56 105
+32 128 56 105
+
+32 96 72 105
+32 112 72 105
+32 128 72 105
+
+
+
+32 24 88 105
+32 40 88 105
+32 56 88 105
+
+32 24 104 105
+32 112 104 105
+32 128 104 105
+32 144 104 105
+
+#Road Start
+
+33 88 34 106
+
+33 94 34 106
+
+33 126 34 106
+33 150 34 106
+33 180 34 106
+33 216 34 106
+33 225 34 106
+
+33 90 160 106
+33 96 160 106
+33 120 160 106
+33 143 160 106
+
+33 184 66 106
+33 218 66 106
+
+33 126 128 106
+33 150 128 106
+33 174 128 106
+33 198 128 106
+33 220 128 106
+
+33 24 64 106
+33 40 64 106
+33 48 64 106
+33 64 64 106
+
+33 95 96 106
+33 111 96 106
+33 127 96 106
+
+33 150 96 106
+
+
+
+#Gold Stock
+35 56 118 108
+35 40 150 108
+35 40 134 108
+35 56 134 108
+35 56 150 108
+35 95 118 108
+35 95 134 108
+35 112 134 108
+
+
+#Road Start 2
+36 87 40 109
+36 87 71 109
+36 87 102 109
+36 87 134 109
+
+36 178 40 109
+36 178 64 109
+36 243 40 109
+
+36 176 133 109
+
+#Circle Start
+34 118 34 107
+34 87 64 107
+34 176 64 107
+34 87 95 107
+34 87 126 107
+34 243 33 107
+34 135 158 107
+34 175 128 107
+34 210 127 107
+
+
+#Door1
+37 76 24 110
+
+#StartWord
+38 40 56 111
+
+#Door2
+39 168 24 112
+
+#Door3
+40 202 24 113
+
+#Door4
+41 202 56 114
+
+#Door5
+42 75 150 115
+
+#Door6
+43 168 150 116
+
+#Mushroom
+44 112 116 117
+44 235 54 117
+
+#Card
+45 170 86 118
+
+#door start
+46 76 70 119
+
+#gold castle
+47 120 85 120
+
+#water
+48 180 150 121
+48 208 150 121
+
+#bridge
+49 180 119 122
+
+#castle
+50 230 110 123
+
+#help
+51 245 105 124
+
+
+#ant
+52 250 100 125
+
+# MARIO
+0 50.0 0 1
+
+
+
+
+
+
+#gach brick
+11 500 135 12
+11 516 135 12
+11 532 135 12
+
+11 596 135 12
+11 612 135 12
+11 628 135 12
+
+11 500 119 12
+11 516 119 12
+
+11 564 119 12
+11 580 119 12
+11 596 119 12
+11 612 119 12
+11 628 119 12
+
+
+11 500 103 12
+11 516 103 12
+
+11 548 103 12
+11 564 103 12
+
+11 500 87 12
+11 516 87 12
+11 532 87 12
+
+
+
+# GOOMBA
+#2 200 136 3
+#2 260 136 3
+#2 320 136 3
+#2 480 136 3
+#2 500 136 3
+
+
+
+
+[UNKNOWN]
+# --- SCENE PORTAL ----
+# type l t ani_set_id r b scene_id
+50 300 98 0 316 150 2
+

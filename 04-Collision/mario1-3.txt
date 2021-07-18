@@ -1,0 +1,566 @@
+# id file_path transparent_color_r g b
+[TEXTURES]
+0 textures\mario.png 255 255 255
+10 textures\enemies.png 3 26 110
+20 textures\misc.png 176 224 248
+30 textures\misc-2.png 0 117 255
+
+# id left top right bottom texture_id
+[SPRITES]
+# BIG MARIO 
+# idle right
+10001 246 154 260 181 0
+# walk
+10002 275 154 290 181 0
+10003 304 154 321 181 0
+# idle left	 
+10011 186 154 200 181 0
+#walk		 
+10012 155 154 170 181 0
+10013 125 154 140 181 0
+# die 
+10099 215 120 231 135 0
+# SMALL MARIO
+# idle small right
+10021 247 0 259 15 0
+# walk
+10022 275 0 291 15 0
+10023 306 0 320 15 0
+# idle small left
+10031 187 0 198 15 0
+# walk
+10032 155 0 170 15 0
+10033 125 0 139 15 0
+
+#BRICK
+20001 408 225 424 241 20
+
+#Long Brick
+20002 1 5 49 22 30
+
+#Big Trees
+20003 362 224 507 352 30
+
+#Small Trees
+20004 52 5 68 21 30
+
+#First Tree
+20005 0 78 128 142 30
+
+#Container hong xanh
+20006 133 68 220 148 30
+
+#Big Brick
+20007 0 773 152 804 30
+
+
+#Chimney
+20008 2 27 36 75 30
+
+#May nho cuoi
+20009 125 696 162 730 30
+
+#gach mini
+20010 200 26 219 42 30
+
+#cay 3 cuc
+20011 602 582 666 636 30
+
+#cay dai
+20012 552 17 655 148 30
+
+#gach cong nho
+20013 181 6 200 25 30
+30013 201 6 220 25 30
+
+#may 1 cloud
+20014 126 0 158 22 30
+
+#container green1
+20015 232 101 311 146 30
+
+#container green2
+20016 343 117 447 146 30
+
+#cuc gach mini brick 3
+20018 163 5 180 24 30
+
+#mini chimney
+20019 152 757 204 808 30
+
+#container pink
+20020 456 100 513 147 30
+
+#container blue
+20021 164 69 221 149 30
+
+#container pink 2
+20022 295 69 359 149 30
+
+
+#container trang white
+20023 343 37 417 149 30
+
+
+
+#container mau hong hinh chu nhat
+20024 183 184 303 248 30
+
+#container mau hong hinh chu nhat
+20025 213 153 336 248 30
+
+#container long
+20026 488 3 546 148 30
+
+#container pink
+20027 243 268 316 301 30
+
+#container blue 1-3
+20028 158 260 231 300 30
+
+#container pink big 1-3
+20029 122 304 211 345 30
+
+#container pink big 1-3
+20029 122 304 211 345 30
+
+#container green 1-3
+20030 70 199 143 239 30
+
+
+
+#Money dong tien xoay
+20017 224 5 242 23 30
+30017 242 5 256 23 30
+40017 256 5 266 23 30
+50017 267 5 279 23 30
+60017 280 5 298 23 30
+
+
+
+#GOOMBA
+30001 5 14 21 29 10
+30002 25 14 41 29 10
+#die
+30003 45 21 61 29 10
+
+#brick with question mark animation
+40001 300 117 316 133 20
+40002 318 117 334 133 20
+40003 336 117 352 133 20
+40004 355 117 370 133 20
+
+# ani_id sprite1_id time1 sprite2_id time2 ...
+[ANIMATIONS]
+
+# ==== MARIO =========
+#idle BIG right
+400 10001 100
+
+#idle BIG left
+401 10011 100
+
+#idle small right
+402 10021 100
+
+#idle small left
+403 10031 100
+
+#walk right big
+500 10001 100 10002 100 10003 100
+
+#walk left big
+501 10011 100 10012 100 10013 100
+
+#walk right small
+502 10021 100 10022 100 10023 100
+
+#walk left small
+503 10031 100 10032 100 10033 100
+
+#die
+599 10099 100
+
+
+# ==== BRICK =========
+601 20001 100
+# ==== QUESTION MARK BRICK =========
+602 40001 1000 40001 100 40002 100 40003 100 40004 100
+# ==== Long Brick =========
+603 20002 100
+# ==== Mini Brick 2 - no quest========= - mat dau hoi da an tien
+714 30013 100
+# ==== Big Trees =========
+604 20003 100
+# ==== Small Trees =========
+605 20004 100
+# ==== First Trees =========
+606 20005 100
+# ==== Container hong xanh =========
+607 20006 100
+# ==== Big Brick=========
+608 20007 100
+# ==== Ong khoi=========
+609 20008 100
+# ==== Mini Cloud=========
+610 20009 100
+# ==== Mini Brick=========
+611 20010 100
+# ==== Medium Tree=========
+612 20011 100
+# ==== Long Tree=========
+613 20012 100
+# ==== Mini Brick 2=========
+#614 20013 100
+614 20013 100 20013 100 30013 100 20013 100
+# ==== cloud 1=========
+615 20014 100
+# ==== Container Green 1=========
+616 20015 100
+# ==== Container Green 2=========
+617 20016 100
+#==== Money dong tien xoay===
+618 20017 100 30017 100 40017 100 50017 100 60017 100
+# ==== Cuc gach mini cong brick 3=========
+619 20018 100
+# ==== Mini chimney =========
+620 20019 100
+# ==== Container Pink =========
+621 20020 100
+# ==== Container Pink 2 =========
+622 20021 100
+# ==== Container Blue =========
+623 20022 100
+# ==== Container White =========
+624 20023 100
+# ==== Container White =========
+625 20024 100
+# ==== Container Big Blue =========
+626 20025 100
+
+# ==== Container Long =========
+627 20026 100
+
+#Container Pink 1-3
+801 20027 100
+
+#Container Blue 1-3
+802 20028 100
+
+#Container Pink Big 1-3
+803 20029 100
+#Container Green 1-3
+804 20030 100
+
+# ==== GOOMBA=========
+# walk
+701 30001 100 30002 100
+# die
+702 30003 100
+
+#
+# id ani1 ani2 ani3
+#
+[ANIMATION_SETS]
+# MARIO
+1 400 401 402 403 500 501 502 503 599
+# BRICK 
+2 601
+# Long Brick
+4 603
+# QUESTION MARK BRICK 
+22 602
+# GOOMBA
+3 701 702
+# Big Trees
+5 604
+# Small Tree
+6 605
+# First Tree
+7 606
+# Container Pink Green
+8 607
+#Big Brick
+9 608
+#Chimney
+10 609
+#Mini Cloud
+11 610
+#Mini brick
+12 611
+#Medium Tree
+13 612
+#Long Tree
+14 613
+#Mini Brick 2 Cong
+15 614 714
+#Cloud1
+16 615
+#ContainerGreen 1
+17 616
+#ContainerGreen 2
+18 617
+#Money Dong tien xoay
+19 618
+#Cuc gach cong mini3 brick
+20 619
+#Ong khoi mini
+21 620
+#Cuc container mau hong (container pink)
+23 621
+#Cuc container mau xanh blue dung canh cuc mau hong pink container
+24 622
+#Cuc container mau hong pink 2 vi tri thu 2 map
+25 623
+#Cuc container trang
+26 624
+#Cuc container mau hong hinh chu nhat
+27 625
+#Cuc container mau hong hinh chu nhat
+28 626
+#Cuc container long
+29 627
+#Cuc container long
+101 801
+#Cuc container blue 1-3
+102 802
+#Cuc container pink big 1-3
+103 803
+#Cuc container green 1-3
+104 804
+[OBJECTS]
+# type x y ani_set_id extra_settings per object type
+# type: 0 = Mario , 1 = Brick, 2 = Goomba , 3 = Long Brick , 4 Big Trees, 5=Small Tree, 6=First Tree1,7=ContainerPink Green
+#	8=Big Brick							9=Chimney(ongkhoi)	10=Mini Cloud				11=MiniBrick 
+
+#	12=Medium Tree(3 cuc nho)           13=LongTree
+
+#	14= Brick Cong Mini                 15=Cloud1			 16=Container green1		 17=Container Green 2
+
+#	18=Money(dong tien xoay)			19=Mini Brick3		 20=Ong khoi Mini Chimney
+
+#	21=Container Pink					22=Container Blue
+
+#	23=Container Pink2					24=Container White	26=Container Big Blue
+
+#	27=Container Long					101=Container Pink 1-3
+
+#Big Trees OBJECT
+#4 0 38 5
+#4 145 38 5
+
+# BRICK 
+# --- danh sach gach dau tien
+3 0 150 4
+3 47 150 4
+3 94 150 4
+3 141 150 4
+3 188 150 4
+3 235 150 4
+3 282 150 4
+3 329 150 4
+3 376 150 4
+3 423 150 4
+3 470 150 4
+3 517 150 4
+3 564 150 4
+3 611 150 4
+3 658 150 4
+3 705 150 4
+3 752 150 4
+3 799 150 4
+3 846 150 4
+3 893 150 4
+3 940 150 4
+3 987 150 4
+3 1034 150 4
+3 1081 150 4
+3 1128 150 4
+3 1175 150 4
+3 1222 150 4
+3 1240 150 4
+3 1316 150 4
+3 1363 150 4
+3 1410 150 4
+3 1430 150 4
+3 1504 150 4
+3 1551 150 4
+3 1598 150 4
+3 1645 150 4
+3 1692 150 4
+3 1739 150 4
+3 1786 150 4
+3 1833 150 4
+3 1880 150 4
+3 1927 150 4
+3 1974 150 4
+3 2021 150 4
+3 2068 150 4
+3 2115 150 4
+3 2162 150 4
+3 2209 150 4
+3 2256 150 4
+3 2303 150 4
+3 2350 150 4
+3 2397 150 4
+3 2444 150 4
+3 2491 150 4
+
+
+#Long Tree
+13 320 21 14
+13 640 21 14
+13 1365 21 14
+13 2068 21 14
+
+
+
+#Medium Tree
+12 865 97 13
+12 2030 97 13
+
+
+
+
+#Small Tree
+5 48 135 6
+5 64 135 6
+5 80 135 6
+5 96 135 6
+5 454 135 6
+5 470 135 6
+5 928 135 6
+5 1008 135 6
+5 1024 135 6
+5 1040 135 6
+5 1648 135 6
+5 1664 135 6
+5 1680 135 6
+5 1696 135 6
+5 1712 135 6
+5 1728 135 6
+5 1856 135 6
+5 1872 135 6
+
+#cuc gach mini brick 3
+
+19 710 87 20
+19 726 87 20
+19 742 87 20
+19 758 87 20
+
+
+
+19 825 87 20
+19 825 103 20
+19 825 119 20
+19 825 135 20
+
+19 950 103 20
+19 950 119 20
+19 950 135 20
+
+19 1075 87 20
+19 1075 103 20
+19 1075 119 20
+19 1075 135 20
+
+
+19 1210 87 20
+19 1210 103 20
+19 1210 119 20
+19 1210 135 20
+
+
+
+
+#Container Pink 1-3
+28 150 118 101
+28 1860 60 101
+
+
+
+#Container Blue 1-3
+29 200 70 102
+29 1730 40 102
+
+
+#Container Pink Big 1-3
+30 1550 100 103
+
+
+#Container Green 1-3
+31 1580 20 104
+31 1780 95 104
+
+
+# MARIO
+0 1500.0 0 1
+
+
+
+#gach brick
+11 500 135 12
+11 516 135 12
+11 532 135 12
+
+11 596 135 12
+11 612 135 12
+11 
+135 12
+
+11 500 119 12
+11 516 119 12
+
+11 564 119 12
+11 580 119 12
+11 596 119 12
+11 612 119 12
+11 628 119 12
+
+
+11 500 103 12
+11 516 103 12
+
+11 548 103 12
+11 564 103 12
+
+11 500 87 12
+11 516 87 12
+11 532 87 12
+
+
+
+# GOOMBA
+#2 200 136 3
+#2 260 136 3
+#2 320 136 3
+#2 480 136 3
+#2 500 136 3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[UNKNOWN]
+# --- SCENE PORTAL ----
+# type l t ani_set_id r b scene_id
+50 300 98 0 316 150 2
+
