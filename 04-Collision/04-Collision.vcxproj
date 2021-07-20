@@ -123,13 +123,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Ant.h" />
+    <ClInclude Include="BackgroundObject.h" />
     <ClInclude Include="BigBrick.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="BrickMini3.h" />
     <ClInclude Include="BrickQuest.h" />
-    <ClInclude Include="Bridge.h" />
     <ClInclude Include="BrownGoomba.h" />
-    <ClInclude Include="Card.h" />
     <ClInclude Include="CastleAni.h" />
     <ClInclude Include="CBigTrees.h" />
     <ClInclude Include="CirlceStart.h" />
@@ -152,18 +151,9 @@
     <ClInclude Include="ContainerPinkGreen.h" />
     <ClInclude Include="ContainerWhite.h" />
     <ClInclude Include="debug.h" />
-    <ClInclude Include="Door1.h" />
-    <ClInclude Include="Door2.h" />
-    <ClInclude Include="Door3.h" />
-    <ClInclude Include="Door4.h" />
-    <ClInclude Include="Door5.h" />
-    <ClInclude Include="Door6.h" />
-    <ClInclude Include="DoorStart.h" />
-    <ClInclude Include="FirstTree.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GoldCastle.h" />
-    <ClInclude Include="GoldRock.h" />
     <ClInclude Include="Goomba.h" />
     <ClInclude Include="GreenKoopa.h" />
     <ClInclude Include="GreenPara.h" />
@@ -171,7 +161,6 @@
     <ClInclude Include="LongBrick.h" />
     <ClInclude Include="LongTree.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="Mushroom.h" />
     <ClInclude Include="Piranha.h" />
     <ClInclude Include="RedGoomba.h" />
     <ClInclude Include="RedKoopa.h" />
@@ -189,17 +178,15 @@
     <ClInclude Include="Sprites.h" />
     <ClInclude Include="StartWord.h" />
     <ClInclude Include="Textures.h" />
-    <ClInclude Include="WaterStart.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Ant.cpp" />
+    <ClCompile Include="BackgroundObject.cpp" />
     <ClCompile Include="BigBrick.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="BrickMini3.cpp" />
     <ClCompile Include="BrickQuest.cpp" />
-    <ClCompile Include="Bridge.cpp" />
     <ClCompile Include="BrownGoomba.cpp" />
-    <ClCompile Include="Card.cpp" />
     <ClCompile Include="CastleAni.cpp" />
     <ClCompile Include="CBigTrees.cpp" />
     <ClCompile Include="CircleStart.cpp" />
@@ -222,18 +209,9 @@
     <ClCompile Include="ContainerPinkGreen.cpp" />
     <ClCompile Include="ContainerWhite.cpp" />
     <ClCompile Include="debug.cpp" />
-    <ClCompile Include="Door1.cpp" />
-    <ClCompile Include="Door2.cpp" />
-    <ClCompile Include="Door3.cpp" />
-    <ClCompile Include="Door4.cpp" />
-    <ClCompile Include="Door5.cpp" />
-    <ClCompile Include="Door6.cpp" />
-    <ClCompile Include="DoorStart.cpp" />
-    <ClCompile Include="FirstTree.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="GameObject.cpp" />
     <ClCompile Include="GoldCastle.cpp" />
-    <ClCompile Include="GoldRock.cpp" />
     <ClCompile Include="Goomba.cpp" />
     <ClCompile Include="GreenKoopa.cpp" />
     <ClCompile Include="GreenPara.cpp" />
@@ -248,7 +226,6 @@
     <ClCompile Include="MiniChimney.cpp" />
     <ClCompile Include="MiniCloud.cpp" />
     <ClCompile Include="Money.cpp" />
-    <ClCompile Include="Mushroom.cpp" />
     <ClCompile Include="Piranha.cpp" />
     <ClCompile Include="RedGoomba.cpp" />
     <ClCompile Include="RedKoopa.cpp" />
@@ -259,7 +236,6 @@
     <ClCompile Include="Sprites.cpp" />
     <ClCompile Include="StartWord.cpp" />
     <ClCompile Include="Textures.cpp" />
-    <ClCompile Include="WaterStart.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="mario.txt" />

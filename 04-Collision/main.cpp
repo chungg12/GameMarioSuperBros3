@@ -51,7 +51,6 @@
 #include "ContainerGreen1.h"
 #include "ContainerGreen2.h"
 #include "MiniBrick2.h"
-#include "FirstTree.h"
 #include "MiniChimney.h"
 #include "BrickMini3.h"
 #include "CoinUp.h"
@@ -69,21 +68,9 @@
 #include "ShakerTree.h"
 #include "RoadStart.h"
 #include "CirlceStart.h"
-#include "GoldRock.h"
 #include "RoadStart2.h"
-#include "Door1.h"
 #include "StartWord.h"
-#include "Door2.h"
-#include "Door3.h"
-#include "Door4.h"
-#include "Door5.h"
-#include "Door6.h"
-#include "Mushroom.h"
-#include "Card.h"
-#include "DoorStart.h"
 #include "GoldCastle.h"
-#include "WaterStart.h"
-#include "Bridge.h"
 #include "CastleAni.h"
 #include "Help.h"
 #include "Ant.h"
@@ -93,6 +80,7 @@
 #include "GreenPara.h"
 #include "Piranha.h"
 #include "BrownGoomba.h"
+#include "BackgroundObject.h"
 using namespace std;
 
 #define WINDOW_CLASS_NAME L"SampleWindow"
@@ -113,6 +101,7 @@ using namespace std;
 #define OBJECT_ID_COINT_UP 18
 #define ANI_OBJECT_ID_COINT_UP 19
 
+#define ID_OBJECT_BACKGROUND 1
 
 CGame* game;
 CMario* mario;
@@ -203,6 +192,14 @@ AnimationSet GetAnimationSetByType(int idAni)
 CGameObject* GetGameObject(int objectId, vector<string> strData)
 {
 	//0 = Mario , 1 = Brick, 2 = Goomba , 3 = Long Brick
+	if (strData.size() == 7)
+	{
+		if (stringToInt(strData[4]) == ID_OBJECT_BACKGROUND)
+		{
+			CGameObject* obj = 	new BackgroundObject(objectId, stringToInt(strData[5]),stringToInt(strData[6]));
+			return obj;
+		}
+	}
 	switch (objectId)
 	{
 	case 0: {
@@ -222,7 +219,6 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	case 3: return	new CLongBrick(objectId);
 	case 4: return	new CBigTrees(objectId);
 	case 5: return	new SmallTree(objectId);
-	case 6: return	new FirstTree(objectId);
 	case 7: return	new ContainerPinkGreen(objectId);
 	case 8: return	new BigBrick(objectId);
 	case 9: return	new Chimney(objectId);
@@ -251,21 +247,9 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	case 32: return new ShakerTree(objectId);
 	case 33: return new RoadStart(objectId);
 	case 34: return new CircleStart(objectId);
-	case 35: return new GoldRock(objectId);
 	case 36: return new RoadStart2(objectId);
-	case 37: return new Door1(objectId);
-	case 38: return new StartWord(objectId);
-	case 39: return new Door2(objectId);
-	case 40: return new Door3(objectId);
-	case 41: return new Door4(objectId);
-	case 42: return new Door5(objectId);
-	case 43: return new Door6(objectId);
-	case 44: return new MushRoom(objectId);
-	case 45: return new Card(objectId);
-	case 46: return new DoorStart(objectId);
+
 	case 47: return new GoldCastle(objectId);
-	case 48: return new WaterStart(objectId);
-	case 49: return new Bridge(objectId);
 	case 50: return new CastleAni(objectId);
 	case 51: return new Help(objectId);
 	case 52: {

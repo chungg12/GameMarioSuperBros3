@@ -7,9 +7,9 @@ void Piranha::GetBoundingBox(float& left, float& top, float& right, float& botto
 	right = x + PIRANHA_BBOX_WIDTH;
 
 	if (state == PIRANHA_STATE_DIE)
-		bottom = y + PIRANHA_BBOX_HEIGHT_DIE;
+		bottom = x + PIRANHA_BBOX_HEIGHT_DIE;
 	else
-		bottom = y + PIRANHA_BBOX_HEIGHT;
+		bottom = x + PIRANHA_BBOX_HEIGHT;
 }
 
 void Piranha::Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects)

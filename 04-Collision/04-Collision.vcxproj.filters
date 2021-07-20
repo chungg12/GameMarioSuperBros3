@@ -72,9 +72,6 @@
     <ClInclude Include="ContainerPinkGreen.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="FirstTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LongTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -147,49 +144,13 @@
     <ClInclude Include="CirlceStart.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GoldRock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="RoadStart2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Door1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="StartWord.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Door2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Door3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Door4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Door5.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Door6.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Mushroom.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Card.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DoorStart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="GoldCastle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="WaterStart.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Bridge.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CastleAni.h">
@@ -219,6 +180,9 @@
     <ClInclude Include="BrownGoomba.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BackgroundObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="debug.cpp">
@@ -228,9 +192,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GameObject.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Mario.cpp">
@@ -276,9 +237,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ContainerPinkGreen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FirstTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LongTree.cpp">
@@ -353,49 +311,13 @@
     <ClCompile Include="CircleStart.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GoldRock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RoadStart2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Door1.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="StartWord.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Door2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Door3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Door4.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Door5.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Door6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Mushroom.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Card.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DoorStart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="GoldCastle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="WaterStart.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Bridge.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="CastleAni.cpp">
@@ -423,6 +345,12 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BrownGoomba.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
