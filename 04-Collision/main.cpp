@@ -36,43 +36,19 @@
 #include "GameObject.h"
 #include "Mario.h"
 #include "Brick.h"
-#include "MediumTree.h"
 #include "BigBrick.h"
 #include "LongBrick.h"
 #include "Goomba.h"
-#include "CBigTrees.h"
-#include "LongTree.h"
-#include "ContainerPinkGreen.h"
 #include "Chimney.h"
-#include "SmallTree.h"
-#include "MiniCloud.h"
 #include "MiniBrick.h"
-#include "Cloud1.h"
-#include "ContainerGreen1.h"
-#include "ContainerGreen2.h"
 #include "MiniBrick2.h"
 #include "MiniChimney.h"
 #include "BrickMini3.h"
 #include "CoinUp.h"
-#include "ContainerPink.h"
-#include "ContainerPink2.h"
-#include "ContainerPink3.h"
-#include "ContainerBlue.h"
-#include "ContainerWhite.h"
-#include "ContainerBigBlue.h"
-#include "ContainerLong.h"
-#include "Container1_3Pink.h"
-#include "Container1_3Blue.h"
-#include "ContainerPinkBig1_3.h"
-#include "ContainerGreen1_3.h"
-#include "ShakerTree.h"
 #include "RoadStart.h"
 #include "CirlceStart.h"
 #include "RoadStart2.h"
-#include "StartWord.h"
-#include "GoldCastle.h"
 #include "CastleAni.h"
-#include "Help.h"
 #include "Ant.h"
 #include "RedKoopa.h"
 #include "RedGoomba.h"
@@ -81,6 +57,7 @@
 #include "Piranha.h"
 #include "BrownGoomba.h"
 #include "BackgroundObject.h"
+#include "ObjectContainer.h"
 using namespace std;
 
 #define WINDOW_CLASS_NAME L"SampleWindow"
@@ -102,6 +79,7 @@ using namespace std;
 #define ANI_OBJECT_ID_COINT_UP 19
 
 #define ID_OBJECT_BACKGROUND 1
+#define ID_OBJECT_BACKGROUND_CONTAINER 2
 
 CGame* game;
 CMario* mario;
@@ -199,6 +177,11 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 			CGameObject* obj = 	new BackgroundObject(objectId, stringToInt(strData[5]),stringToInt(strData[6]));
 			return obj;
 		}
+		else if (stringToInt(strData[4]) == ID_OBJECT_BACKGROUND_CONTAINER)
+		{
+			CGameObject* obj = new ObjectContainer(objectId, stringToInt(strData[5]), stringToInt(strData[6]));
+			return obj;
+		}
 	}
 	switch (objectId)
 	{
@@ -217,41 +200,18 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	}
 	case 1: return	new CBrick(objectId);
 	case 3: return	new CLongBrick(objectId);
-	case 4: return	new CBigTrees(objectId);
-	case 5: return	new SmallTree(objectId);
-	case 7: return	new ContainerPinkGreen(objectId);
 	case 8: return	new BigBrick(objectId);
 	case 9: return	new Chimney(objectId);
-	case 10: return	new MiniCloud(objectId);
 	case 11: return	new MiniBrick(objectId);
-	case 12: return	new MediumTree(objectId);
-	case 13: return	new LongTree(objectId);
 	case 14: return	new MiniBrick2(objectId);
-	case 15: return	new Cloud1(objectId);
-	case 16: return	new ContainerGreen1(objectId);
-	case 17: return	new ContainerGreen2(objectId);
 	case OBJECT_ID_COINT_UP: return	new CCoinUp(objectId);
 	case 19: return	new MiniBrick3(objectId);
 	case 20: return	new MiniChimney(objectId);
-	case 21: return	new ContainerPink(objectId);
-	case 22: return	new ContainerBlue(objectId);
-	case 23: return	new ContainerPink2(objectId);
-	case 24: return	new ContainerWhite(objectId);
-	case 25: return	new ContainerPink3(objectId);
-	case 26: return	new ContainerBigBlue(objectId);
-	case 27: return	new ContainerLong(objectId);
-	case 28: return	new Container13Pink(objectId);
-	case 29: return	new Container13Blue(objectId);
-	case 30: return	new ContainerPinkBig13(objectId);
-	case 31: return	new ContainerGreen13(objectId);
-	case 32: return new ShakerTree(objectId);
 	case 33: return new RoadStart(objectId);
 	case 34: return new CircleStart(objectId);
 	case 36: return new RoadStart2(objectId);
-
-	case 47: return new GoldCastle(objectId);
 	case 50: return new CastleAni(objectId);
-	case 51: return new Help(objectId);
+	
 	case 52: {
 		Ant* ant = new Ant(objectId);
 		return ant;

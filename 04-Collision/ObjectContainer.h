@@ -1,17 +1,21 @@
 #pragma once
 #pragma once
 
+#pragma once
 #include "GameObject.h"
 #include "Container.h"
-#define CONTAINER_PINK_BIG13_BOX_WIDTH  89
-#define CONTAINER_PINK_BIG13_BOX_HEIGHT 41
-class ContainerPinkBig13 : public CContainer
+class ObjectContainer : public CContainer
 {
+public:
+	int widthObject;
+	int heightObject;
 
 public:
-	ContainerPinkBig13(int objectId) : CContainer(objectId, CONTAINER_PINK_BIG13_BOX_WIDTH)
+	ObjectContainer(int objectId,int w,int h) : CContainer(objectId, w)
 	{
-
+		
+		this->widthObject = w;
+		this->heightObject = h;
 	}
 	virtual void Render();
 	virtual void GetBoundingBox(float& l, float& t, float& r, float& b);

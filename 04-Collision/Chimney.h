@@ -10,7 +10,7 @@ class Chimney : public CGameObject
 public:
 	Chimney(int objectId) : CGameObject(objectId)
 	{
-		this->isBackground = true;
+		this->isBackground = false;
 	}
 	virtual void Render();
 	virtual void GetBoundingBox(float& l, float& t, float& r, float& b);

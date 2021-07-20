@@ -42,16 +42,7 @@
     <ClInclude Include="main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CBigTrees.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="LongBrick.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerGreen2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerGreen1.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Container.h">
@@ -60,31 +51,13 @@
     <ClInclude Include="MiniBrick2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cloud1.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Chimney.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BigBrick.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ContainerPinkGreen.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="LongTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MediumTree.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="MiniBrick.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MiniCloud.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SmallTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BrickQuest.h">
@@ -96,46 +69,7 @@
     <ClInclude Include="MiniChimney.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CoinUp.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Money.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerPink.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerBlue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerPink2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerWhite.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerPink3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerBigBlue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerLong.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Container1_3Pink.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Container1_3Blue.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerPinkBig1_3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ContainerGreen1_3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ShakerTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="RoadStart.h">
@@ -147,16 +81,7 @@
     <ClInclude Include="RoadStart2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="StartWord.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="GoldCastle.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="CastleAni.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Help.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Ant.h">
@@ -181,6 +106,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="BackgroundObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CoinUp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectContainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -209,16 +140,7 @@
     <ClCompile Include="Goomba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CBigTrees.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LongBrick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerGreen1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerGreen2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Container.cpp">
@@ -230,28 +152,10 @@
     <ClCompile Include="Chimney.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Cloud1.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="BigBrick.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ContainerPinkGreen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="LongTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MediumTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="MiniBrick.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MiniCloud.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SmallTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="BrickQuest.cpp">
@@ -269,42 +173,6 @@
     <ClCompile Include="Money.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ContainerPink.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerBlue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerPink2.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerWhite.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerPink3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerBigBlue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerLong.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Container1_3Pink.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Container1_3Blue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerPinkBig1_3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ContainerGreen1_3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ShakerTree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="RoadStart.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -314,16 +182,7 @@
     <ClCompile Include="RoadStart2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="StartWord.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="GoldCastle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="CastleAni.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Help.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Ant.cpp">
@@ -353,12 +212,18 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectContainer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="mario.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
     <Text Include="mario1-3.txt" />
     <Text Include="start_mario.txt" />
+    <Text Include="mario.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="mario.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>
