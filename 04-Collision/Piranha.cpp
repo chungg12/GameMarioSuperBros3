@@ -1,78 +1,75 @@
-#include "Piranha.h"
+﻿#include "Piranha.h" 
 
-void Piranha::GetBoundingBox(float& left, float& top, float& right, float& bottom)
+void Piranha::Render()
 {
-	left = x;
-	top = y;
-	right = x + PIRANHA_BBOX_WIDTH;
-
-	if (state == PIRANHA_STATE_DIE)
-		bottom = x + PIRANHA_BBOX_HEIGHT_DIE;
-	else
-		bottom = x + PIRANHA_BBOX_HEIGHT;
+	if (this->GetState() == PIRANHA_STATE_HIDE) {
+		return;
+	}
+	animations[0]->Render(x, y);
+	RenderBoundingBox();
 }
+
+
+
+void Piranha::GetBoundingBox(float& l, float& t, float& r, float& b)
+{
+	isBackground = false;
+
+	l = x;
+	t = y;
+	r = x + PIRANHA_BOX_WIDTH;
+	b = y + PIRANHA_BOX_HEIGHT;
+}
+
 
 void Piranha::Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects)
 {
-	CGameObject::Update(dt, coObjects);
+	//hide not update 
+	if (this->GetState() == PIRANHA_STATE_HIDE) {
+		return;
+	}
 
-	//
-	// TO-DO: make sure Goomba can interact with the world and to each of them too!
-	// 
+	CGameObject::Update(dt, coObjects);
 
 	x += width;
 	y += height;
 
-	if (vy < 0 && x < this->min_y) {//dao chieu
+	//Navigator top to bottom
+	if (vy < 0 && y < this->min_y) {
 		y = min_y;
 		vy = -vy;
 	}
-
-	if (vy > 0 && y > this->max_y) {
-		y = max_y;
-		vy = -vy;
-	}
-}
-
-void Piranha::Render()
-{
-	
-	int ani = PIRANHA_ANI_WALKING;
-	if (state == PIRANHA_STATE_DIE) {
-		ani = PIRANHA_ANI_DIE;
-	}
-	if (dieTime > 0) // paint die stay only time
+	//[condition hidden coin]
+	if (y >= max_y)
 	{
-		//animations[ani]->Render(x, y);
+		this->SetState(PIRANHA_STATE_MOVING);
 	}
 
-	if (state == PIRANHA_STATE_DIE && dieTime > 0) {
 
-	}
-	//RenderBoundingBox();
 }
-
-void Piranha::SetState(int state)
-{
-	CGameObject::SetState(state);
-	switch (state)
-	{
-	case PIRANHA_STATE_DIE:
-		y += PIRANHA_BBOX_HEIGHT - PIRANHA_BBOX_HEIGHT_DIE + 1;
-		vx = 0;
-		vy = 0;
-		break;
-	case PIRANHA_STATE_WALKING:
-		vy = -PIRANHA_WALKING_SPEED;
-	}
-}
-
 void Piranha::SetPosition(float x, float y) {
 	this->x = x;
 	this->y = y;
 	if (min_y == -1 && max_y == -1)// not init zone walking
 	{
-		min_y = y - PIRANHA_DEFAULT_ZONE_WALKING;
-		max_y = y + PIRANHA_DEFAULT_ZONE_WALKING;
+		min_y = y - PIRANHA_DEFAULT_ZONE_UP - this->height;
+		max_y = y;
+	}
+	this->y = this->y - 1;// move up 1 point -> check [condition hidden coin]
+}
+
+void Piranha::SetState(int state)
+{
+	CGameObject::SetState(state);
+	vx = 0;
+	switch (state)
+	{
+	case PIRANHA_STATE_MOVING:
+		vy = -PIRANHA_SPEED;//bottom -> top
+		break;
+	case PIRANHA_STATE_HIDE:
+		vy = 0;
+		break;
 	}
 }
+

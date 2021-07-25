@@ -5,7 +5,7 @@
 #define COIN_UP_BOX_HEIGHT 18
 
 #define COIN_UP_DEFAULT_ZONE_UP 50
-#define  COIN_UP_SPEED 0.2f
+#define  COIN_UP_SPEED 0.005f
 
 #define  COIN_UP_STATE_HIDE 0
 #define  COIN_UP_STATE_MOVING 1

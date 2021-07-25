@@ -48,7 +48,6 @@
 #include "RoadStart.h"
 #include "CirlceStart.h"
 #include "RoadStart2.h"
-#include "CastleAni.h"
 #include "Ant.h"
 #include "RedKoopa.h"
 #include "RedGoomba.h"
@@ -210,7 +209,6 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	case 33: return new RoadStart(objectId);
 	case 34: return new CircleStart(objectId);
 	case 36: return new RoadStart2(objectId);
-	case 50: return new CastleAni(objectId);
 	
 	case 52: {
 		Ant* ant = new Ant(objectId);
@@ -486,66 +484,6 @@ int Run()
 	return 1;
 }
 
-//void LoadResources2()
-//{
-//	objects.clear();
-//
-//
-//	textures = CTextures::GetInstance();
-//	sprites = CSprites::GetInstance();
-//	animations = CAnimations::GetInstance();
-//
-//	string fileName = "mario.txt";
-//	std::ifstream file(fileName);
-//	std::string str;
-//	while (std::getline(file, str))
-//	{
-//		if (str[0] == '[') //style context
-//		{
-//			currentContext = str;
-//			continue;
-//		}
-//		else if (str[0] == '#' || str.length() == 0)//comment or empty line
-//		{
-//			continue;
-//		}
-//		else if (IsNumberic(string(1, str[0]))) // is data strart with number
-//		{
-//			ProcessLineData(str);
-//		}
-//	}
-//}
-
-//doc file mario map 1-3
-//void LoadResources3()
-//{
-//	objects.clear();
-//
-//
-//	textures = CTextures::GetInstance();
-//	sprites = CSprites::GetInstance();
-//	animations = CAnimations::GetInstance();
-//
-//	string fileName = "mario1-3.txt";
-//	std::ifstream file(fileName);
-//	std::string str;
-//	while (std::getline(file, str))
-//	{
-//		if (str[0] == '[') //style context
-//		{
-//			currentContext = str;
-//			continue;
-//		}
-//		else if (str[0] == '#' || str.length() == 0)//comment or empty line
-//		{
-//			continue;
-//		}
-//		else if (IsNumberic(string(1, str[0]))) // is data strart with number
-//		{
-//			ProcessLineData(str);
-//		}
-//	}
-//}
 
 //doc file start game
 
@@ -600,11 +538,19 @@ void CSampleKeyHander::OnKeyDown(int KeyCode)
 		LoadResources4("mario1-3.txt");
 		break;
 	case DIK_A: // reset
-	mario->SetState(MARIO_STATE_IDLE);
+		mario->SetState(MARIO_STATE_IDLE);
 		mario->SetLevel(MARIO_LEVEL_BIG);
-	mario->SetSpeed(0, 0);
+		mario->SetPosition(50.0f, 0.0f);
+		mario->SetSpeed(0, 0);
 		break;
-	}
+	
+	case DIK_B: // reset
+		mario->SetState(MARIO_STATE_IDLE);
+		mario->SetLevel(MARIO_LEVEL_RACOON);
+		mario->SetPosition(50.0f, 0.0f);
+		mario->SetSpeed(0, 0);
+		break;
+}
 }
 
 

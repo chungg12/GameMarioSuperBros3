@@ -81,9 +81,6 @@
     <ClInclude Include="RoadStart2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CastleAni.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Ant.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -182,9 +179,6 @@
     <ClCompile Include="RoadStart2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="CastleAni.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Ant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -218,8 +212,8 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="mario1-3.txt" />
-    <Text Include="start_mario.txt" />
     <Text Include="mario.txt" />
+    <Text Include="start_mario.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="mario.png">

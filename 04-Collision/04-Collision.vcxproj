@@ -129,7 +129,6 @@
     <ClInclude Include="BrickMini3.h" />
     <ClInclude Include="BrickQuest.h" />
     <ClInclude Include="BrownGoomba.h" />
-    <ClInclude Include="CastleAni.h" />
     <ClInclude Include="CirlceStart.h" />
     <ClInclude Include="Chimney.h" />
     <ClInclude Include="CoinUp.h" />
@@ -164,7 +163,6 @@
     <ClCompile Include="BrickMini3.cpp" />
     <ClCompile Include="BrickQuest.cpp" />
     <ClCompile Include="BrownGoomba.cpp" />
-    <ClCompile Include="CastleAni.cpp" />
     <ClCompile Include="CircleStart.cpp" />
     <ClCompile Include="CoinUp.cpp" />
     <ClCompile Include="Chimney.cpp" />
