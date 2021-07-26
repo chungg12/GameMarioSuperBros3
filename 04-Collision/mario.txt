@@ -199,7 +199,8 @@
 40049 193 45 224 81 50
 40050 241 48 276 81 50
 
-
+50012 0 63 17 99 60
+50013 0 25 17 61 60
 
 
 #brick with question mark animation
@@ -288,6 +289,9 @@
 
 #piranha new
 121 40012 100 40013 100
+
+
+122 50012 500 50013 300
 # ==== Container Green 1=========
 616 20015 100
 # ==== Container Green 2=========
@@ -445,6 +449,8 @@
 34 640 
 
 35 121
+
+36 122
 [OBJECTS]
 # type x y ani_set_id extra_settings per object type
 # type: 0 = Mario , 1 = Brick, 2 = Goomba , 3 = Long Brick , 4 Big Trees, 5=Small Tree, 6=First Tree1,7=ContainerPink Green
@@ -516,6 +522,9 @@
 8 870 136 9
 
 
+#fire piranha
+59 1780 105 36
+59 320 105 36
 
 
 #Chimney
@@ -651,9 +660,12 @@
 
 #piranha
 57 1710 120 35
+
 #mini chimney (ong khoi mini)
 20 1700 110 21
 20 2230 110 21
+
+
 
 
 #container pink mau hong de mario nhay
@@ -753,7 +765,7 @@
 
 
 # MARIO
-0 1700.0 0 1
+0 200.0 0 1
 
 
 

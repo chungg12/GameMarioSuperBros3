@@ -53,6 +53,7 @@
 #include "RedGoomba.h"
 #include "GreenKoopa.h"
 #include "GreenPara.h"
+#include "FirePiranha.h"
 #include "Piranha.h"
 #include "BrownGoomba.h"
 #include "BackgroundObject.h"
@@ -220,6 +221,7 @@ CGameObject* GetGameObject(int objectId, vector<string> strData)
 	case 56: return new GreenPara(objectId);
 	case 57: return new Piranha(objectId);
 	case 58: return new BrownGoomba(objectId);
+	case 59: return new FirePiranha(objectId);
 	default:
 		return NULL;
 	}
