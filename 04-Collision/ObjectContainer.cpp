@@ -12,8 +12,8 @@ void ObjectContainer::GetBoundingBox(float& l, float& t, float& r, float& b)
 {
 	l = x;
 	t = y;
-	r = x + this->widthObject;
-	b = y + this->widthObject;
+	r = x + this->width;
+	b = y + this->height;
 }
 
 

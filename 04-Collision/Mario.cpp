@@ -13,6 +13,7 @@
 #include "GreenPara.h"
 #include "BrownGoomba.h"
 #include "Piranha.h"
+#include "FirePiranha.h"
 
 
 
@@ -246,6 +247,36 @@ void CMario::Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects)
 					if (untouchable == 0)
 					{
 						if (piranha->GetState() != PIRANHA_STATE_HIDE)
+						{
+							if (level > MARIO_LEVEL_SMALL)
+							{
+								level = MARIO_LEVEL_SMALL;
+								StartUntouchable();
+							}
+							else
+								SetState(MARIO_STATE_DIE);
+						}
+					}
+				}
+				}
+			else if (dynamic_cast<FirePiranha*>(e->obj)) // if e->obj is Goomba  
+				{
+				FirePiranha* firePiranha = dynamic_cast<FirePiranha*>(e->obj);
+
+				// jump on top >> kill Goomba and deflect a bit 
+				if (e->ny < 0)
+				{
+					if (firePiranha->GetState() != FIREPIRANHA_STATE_HIDE)
+					{
+						firePiranha->SetState(FIREPIRANHA_STATE_HIDE);
+						vy = -MARIO_JUMP_DEFLECT_SPEED;
+					}
+				}
+				else if (e->nx != 0)
+				{
+					if (untouchable == 0)
+					{
+						if (firePiranha->GetState() != FIREPIRANHA_STATE_HIDE)
 						{
 							if (level > MARIO_LEVEL_SMALL)
 							{

@@ -669,11 +669,11 @@
 
 
 #container pink mau hong de mario nhay
-21 220 105 23 2 57 47
+#21 220 105 23 2 57 47
 21 2050 105 23 2 57 47
 
 #container blue mau xanh cao dug canh cuc hong dau tien de mario nhay
-22 250 73 24 2 57 80
+#22 250 73 24 2 57 80
 
 #container pink thu 2 vi tri giua ban do cung voi dong hon don
 23 420 74 25 2 64 81
@@ -696,7 +696,7 @@
 
 
 #red goomba
-54 100 100 31
+54 700 100 31
 
 
 #green koopa

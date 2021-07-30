@@ -17,7 +17,7 @@
 #define REDGOOMBA_ANI_NOT_FLY 1
 #define REDGOOMBA_ANI_DIE 2
 
-#define REDGOOMBA_DEFAULT_ZONE_WALKING 150
+#define REDGOOMBA_DEFAULT_ZONE_WALKING 50
 
 class RedGoomba : public CGameObject
 {
