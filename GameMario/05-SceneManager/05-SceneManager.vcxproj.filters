@@ -75,6 +75,9 @@
     <ClCompile Include="Portal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="BigBrick.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Animation.h">
@@ -146,6 +149,9 @@
     <ClInclude Include="Portal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="BigBrick.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="scene01.txt" />
@@ -157,6 +163,7 @@
     <Text Include="coin.txt" />
     <Text Include="cloud.txt" />
     <Text Include="brick.txt" />
+    <Text Include="BigBrick.txt" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="textures\bbox.png">
