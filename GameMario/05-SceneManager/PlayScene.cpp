@@ -10,7 +10,7 @@
 #include "Coin.h"
 #include "Platform.h"
 #include "ColorBlock.h"
-
+#include "ParaGoomba.h"
 #include "SampleKeyEventHandler.h"
 
 using namespace std;
@@ -139,7 +139,11 @@ void CPlayScene::_ParseSection_OBJECTS(string line)
 		obj = new CGoomba(x, y, level); 
 		break; 
 	}
-	
+	case OBJECT_TYPE_PARA_RED_GOOMBA: {
+		int level = (int)atoi(tokens[3].c_str());
+		obj = new CParaGoomba(x, y, level);
+		break;
+	}
 	
 	case OBJECT_TYPE_BRICK: obj = new CBrick(x, y); break;
 	case OBJECT_TYPE_QUESTION_BLOCK: {

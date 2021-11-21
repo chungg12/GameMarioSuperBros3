@@ -11,7 +11,7 @@
 #include "Collision.h"
 #include "ColorBlock.h"
 #include "QuestionBlock.h"
-
+#include "ParaGoomba.h"
 void CMario::Update(DWORD dt, vector<LPGAMEOBJECT>* coObjects)
 {
 	isOnPlatform = false;
@@ -57,7 +57,8 @@ void CMario::OnCollisionWith(LPCOLLISIONEVENT e)
 		OnCollisionWithQuestionBlock(e);
 	else if (dynamic_cast<Item*>(e->obj))
 		OnCollisionWithItem(e);
-	
+	else if (dynamic_cast<CParaGoomba*>(e->obj))
+		OnCollisionWithParaRedGoomba(e);
 
 }
 
@@ -104,6 +105,44 @@ void CMario::OnCollisionWithGoomba(LPCOLLISIONEVENT e)
 		if (untouchable == 0)
 		{
 			if (goomba->GetState() != GOOMBA_STATE_DIE)
+			{
+				if (level > MARIO_LEVEL_SMALL)
+				{
+					level = MARIO_LEVEL_SMALL;
+					StartUntouchable();
+				}
+				else
+				{
+					DebugOut(L">>> Mario DIE >>> \n");
+					SetState(MARIO_STATE_DIE);
+				}
+			}
+		}
+	}
+}
+
+void CMario::OnCollisionWithParaRedGoomba(LPCOLLISIONEVENT e)
+{
+	CParaGoomba* paraGoomba = dynamic_cast<CParaGoomba*>(e->obj);
+
+	// jump on top >> kill Goomba and deflect a bit 
+	if (e->ny < 0)
+	{
+		if (paraGoomba->GetLevel() == LEVEL_PARA_RED_GOOMBA) {
+		}
+		if (paraGoomba->GetState() != PARA_RED_GOOMBA_STATE_DIE)
+		{
+			if (paraGoomba->GetLevel() == LEVEL_RED_GOOMBA)	paraGoomba->SetState(PARA_RED_GOOMBA_STATE_DIE);
+			else paraGoomba->SetLevel(LEVEL_RED_GOOMBA);
+
+			vy = -MARIO_JUMP_DEFLECT_SPEED;
+		}
+	}
+	else // hit by Goomba
+	{
+		if (untouchable == 0)
+		{
+			if (paraGoomba->GetState() != PARA_RED_GOOMBA_STATE_DIE)
 			{
 				if (level > MARIO_LEVEL_SMALL)
 				{
