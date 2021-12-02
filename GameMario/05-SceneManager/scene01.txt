@@ -106,8 +106,6 @@ map1-1.txt
 #Red Koopa
 3	576	250	0
 
-#piranha plant
-11	220	300
 
 #brick
 1	1935	385
@@ -133,6 +131,8 @@ map1-1.txt
 #p switch
 8	2010	340	2
 
+#piranha plant
+11	1783	350
 
 
 
