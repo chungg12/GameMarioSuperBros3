@@ -14,7 +14,7 @@
 #define PLANT_BULLET_STATE_BOT_RIGHT 200
 #define PLANT_BULLET_STATE_BOT_LEFT 300
 #define PLANT_BULLET_STATE_TOP_LEFT 400
-
+#define ID_ANI_BULLET 401
 class PlantBullet : public CGameObject
 {
 protected:
